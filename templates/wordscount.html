@@ -1,0 +1,13 @@
+<h1>
+    COUNT THE WORDS
+</h1>
+
+<p>
+    <a href={% url 'about' %}> Click here to know about this website </a>
+</p>
+
+<form action={% url 'count' %}>
+    <textarea rows="10" cols="80" name="usertext"></textarea>
+    <br/> <br/>
+    <input type="submit" value="Count!" />
+</form>

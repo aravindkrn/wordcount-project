@@ -1,0 +1,24 @@
+<h1>
+    WORD COUNT TRACKER
+</h1>
+
+<p>
+    Total number of words in the user inputted text : <b>{{ count }}</b>
+    <br/>
+    Most occured text and its repetation count      : <b>{{ maxoccured }}</b>
+    <br/>
+    User inputted text : <b>{{ text }}</b>
+    <br/><br/><br/>
+
+    <a href={% url 'home' %} > Enter new text ! </a>
+</p>
+
+<br/> <br/>
+<p>
+    <b>More info</b>
+    <br/>
+    {% for word1, count1 in wordcount %}
+        {{ word1 }} - {{ count1 }}
+        <br/>
+    {% endfor %}
+</p>
